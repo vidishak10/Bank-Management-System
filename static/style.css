@@ -1,0 +1,130 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #1E90FF, #87CEFA);
+    position: relative;
+}
+
+/* Overlay for Background */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.4); /* Semi-transparent white */
+    z-index: 1;
+}
+
+/* Container */
+.container {
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    color: #333;
+}
+
+h1 {
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-size: 2.8rem;
+    color: #fff;
+}
+
+/* Card Layout */
+.card {
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Button Styling */
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #1E90FF, #00BFFF); /* Dodger Blue gradient */
+    color: white;
+    padding: 15px 20px;
+    margin: 15px 0;
+    text-align: center;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    font-weight: 500;
+    cursor: pointer;
+    width: 80%;
+}
+
+.button:hover {
+    background: linear-gradient(135deg, #00BFFF, #1E90FF); /* Reverse gradient for hover effect */
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+}
+
+.button i {
+    margin-right: 10px;
+    font-size: 1.3rem;
+}
+
+/* Form Styling */
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+label {
+    margin: 10px 0 5px;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+}
+
+input:focus {
+    outline: none;
+    border-color: #1E90FF;
+    box-shadow: 0 0 5px rgba(30, 144, 255, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    .card {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .button {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+}
